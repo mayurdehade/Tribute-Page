@@ -1,0 +1,245 @@
+/*
+font-family: 'Barlow', sans-serif;
+font-family: 'Fragment Mono', monospace;
+font-family: 'Kanit', sans-serif;
+font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Sono', sans-serif;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    user-select: none;
+    font-family: 'Fragment Mono', monospace;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    height: 100rem;
+}
+
+.navbar h1{
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 3rem;
+    font-family: 'Barlow', sans-serif;
+    letter-spacing: 0.5rem;
+    /* text-decoration: underline; */
+}
+
+#short{
+    width: 55rem;
+    margin: auto;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    margin: 9rem 0 0 0;
+    
+
+}
+.image img{
+    width: 34rem;
+    /* margin: 11rem 17rem; */
+    border: 2px solid white;
+    border-radius: 3rem;
+    overflow: hidden;
+    box-shadow: 0px 0px 81px -23px rgb(255 255 255);
+    cursor: none;
+}
+
+
+.info{
+    width: 71rem;
+    margin: 1rem 0 0 10rem;
+    font-family: 'Fragment Mono', monospace;
+}
+
+.info h2{
+    font-size: 3.5rem;
+}
+.info h3{
+    font-size: 2rem;
+}
+.info p{
+    font-size: 2.5rem;
+    text-align: justify;
+}
+
+/* Scroll Animation */
+.scroll-downs {
+  position: absolute;
+  top: 62rem;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  animation-name: hide;
+  width :34px;
+  height: 55px;
+  opacity: 0.6;
+}
+.mousey {
+  width: 3px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 3px solid #fff;
+  border-radius: 25px;
+  box-sizing: content-box;
+}
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #fff;
+  animation-name: scroll;
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% { opacity: 0; }
+  10% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(15px); opacity: 0;}
+}
+
+.early{
+    text-align: justify;
+    font-size: 16px;
+    width: 113rem;
+    align-items: center;
+    margin: 20rem auto 10rem auto;
+    font-family: 'Fragment Mono', monospace;
+    line-height: 35px;
+}
+
+.third {
+  display: flex;
+  justify-content: center;
+  column-gap: 13rem;
+  margin: 13rem 0 5rem 0;
+  height: 50rem;
+  vertical-align: middle;
+}
+
+.mid-info {
+  width: 70rem;
+  font-size: 1.5rem;
+  text-align: justify;
+  line-height: 23px;
+  font-family: 'Fragment Mono', monospace;
+}
+
+.mid-image img{
+    width: 36rem;
+    border: 3px solid white;
+    border-radius: 2rem;
+    margin: auto auto;
+    box-shadow: 0px 0px 81px -23px rgb(255 255 255);
+}
+
+.special {
+    border: 3px solid white;
+    padding: 18px;
+    border-radius: 20px;
+    font-size: 17.5px;
+    /* font-weight: bold; */
+    font-style: italic;
+    box-shadow: 0px 0px 81px -23px rgb(255 255 255);
+}
+
+.second {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mid-info {
+  width: 54rem;
+}
+
+.const-image img {
+  width: 82rem;
+  border: 3px solid white;
+  border-radius: 20px;
+  margin: auto;
+  box-shadow: 0px 0px 81px -23px rgb(255 255 255);
+}
+
+
+.early-2 {
+  text-align: justify;
+  font-size: 16px;
+  width: 113rem;
+  align-items: center;
+  margin: 9rem auto 6rem auto;
+  font-family: 'Fragment Mono', monospace;
+  line-height: 35px;
+}
+
+
+.convert {
+  text-align: justify;
+  font-size: 16px;
+  width: 113rem;
+  align-items: center;
+  margin: 9rem auto 6rem auto;
+  font-family: 'Fragment Mono', monospace;
+  line-height: 35px;
+}
+
+
+.footer {
+  width: 100%;
+  font-size: 15px;
+  text-align: center;
+}
+
+.early-3 {
+    text-align: center;
+    font-size: 16px;
+    width: 113rem;
+    align-items: center;
+    margin: 10rem auto 10rem auto;
+    font-family: 'Fragment Mono', monospace;
+    line-height: 35px;
+}
+
+
+/* Dot Animation */
+
+.dot {
+  cursor: pointer;
+  height: 5px;
+  width: 5px;
+  margin: 0 4px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* fade animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 4s;
+}
+
+@keyframes fade {
+  from {opacity: 0}
+  to {opacity: 1}
+}
